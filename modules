@@ -1,0 +1,37 @@
+MODULE 1: DATA GENERATION/DATA GATHERING
+(fitness_dataset_with_errors.csv)
+Contains raw synthetic user fitness data (1000+ rows, 30+ columns).
+Includes intentional errors: duplicates, missing values, typos, outliers, and irrelevant data (e.g., “TEST”, “ADMIN”).
+Used to demonstrate data cleaning and preprocessing in the project.
+
+Module 2 : DATA PREPROSESING
+To clean and standardize the raw fitness dataset.
+Function	Description
+remove_duplicates()	Deletes duplicate user entries
+fix_typos()	Corrects text inconsistencies (e.g., “mal” → “Male”)
+handle_missing_values()	Fills missing numeric values with mean, categorical with mode
+remove_outliers()	Removes BMI, sleep hours, and calories beyond normal ranges
+remove_irrelevant()	Deletes rows like “TEST”, “ADMIN”, etc.
+save_cleaned_data()	Outputs cleaned dataset to fitness_dataset_cleaned.csv
+
+Module 3: CHATBOT LOGIC $ Fitness Engine 
+Implements chatbot logic to interact with users via text queries.
+chatbot_response(user_input)	Detects intent and responds (e.g., workout or diet suggestion)
+extract_goal()	Extracts goal keywords like “weight loss” or “muscle gain”
+suggest_response()	Generates natural text replies based on fitness logic
+
+Fitness Engine 
+Contains logic for fitness-related computations and recommendations.
+Core Features:
+BMI calculation
+Workout & diet recommendations
+Weekly progress tracking
+
+Module 4: Fitness Reports visvalization
+visualization.py
+
+Purpose:
+Generates data visualizations for fitness insights.
+BMI distribution
+Steps vs Calories Burned
+Sleep Hours vs Stress Level
