@@ -1,0 +1,21 @@
+Wellness Fitness Assitance Chatbot 
+
+Objective:
+To build an AI-powered chatbot that assists users with personalized fitness advice — including:
+Workout recommendations
+Diet planning
+Progress tracking
+BMI calculation
+Daily motivation & habit building
+
+Module 1 
+DATA Generation/Data Gathering 
+Created  dataset of  user fitness information for  testing, personalization, and chatbot training
+The Dataset comes with 1000+ raws and 30+ column and attriyubes are Age, Height, Weight, Gender,Activity Level,
+Calories Intake/Burned, Sleep Hours, Steps, Mood, BMI, etc.
+
+Module 2
+DATA Cleaning 
+To prepare clean, consistent, and usable fitness data for the chatbot’s personalization and analytics features.
+
+
